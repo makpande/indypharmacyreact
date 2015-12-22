@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+
+
+  get 'welcome/about'
+
+  get 'welcome/contact'
+
   root 'application#index'
   mount APIS::Base => '/api'
   # The priority is based upon order of creation: first created -> highest priority.
